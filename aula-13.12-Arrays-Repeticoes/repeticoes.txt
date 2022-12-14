@@ -1,0 +1,27 @@
+inputs -> material prima -> declaração de variaveis
+
+processing 
+    - estrutura condicional - IF ELSE ou SWITCH CASE
+    - estrutura de repetição - FOR, WHILE, DO WHILE
+         - repete por numeros definidos de vezes - FOR
+
+         - por numero indefinido de vezes - WHILE ou DO WHILE
+
+         while(true) -> VERIFICAR PRIMEIRO A CONDIÇÃO PARA EXECUTAR O TRECHO e executa depois
+
+         do while -> executa e depois valida se precisa repetir o trecho de código dentro do {}
+
+
+         while(condicao === true) {
+            linha
+            linha
+            linha
+            
+         }
+
+
+
+output -> saida das informações -> 
+
+
+10, 20, 30, 35

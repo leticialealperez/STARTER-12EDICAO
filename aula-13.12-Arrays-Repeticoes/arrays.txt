@@ -1,0 +1,12 @@
+let listaNumeros = [14, 25, 38, 17, -7]       Array<number> ou number[]
+let listaNomes = ['João', 'Maria', 'Pedro']    Array<string> ou string[]
+Array<any> any[]
+
+listaNumeros[0] => 14
+listaNumeros[1] => 25
+listaNumeros[2] => 38
+listaNumeros[3] => 17
+listaNumeros[4] => -7
+
+tamanho da lista = 5
+ultimo indice da lista = 4 ou tamanho - 1
