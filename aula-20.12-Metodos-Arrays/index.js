@@ -40,7 +40,7 @@ let repetidos1 = listaNumeros.filter((valor1, indice1, array1) => {
 
 console.log('')
 console.log('PRIMEIRA RESOLUÇÃO ', repetidos1)
-console.log('PRIMEIRA RESOLUÇÃO ', repetidos1.filter((valor, indice, array) => valor !== array[indice + 1]))
+
 
 
 // ---------------      SEGUNDA RESOLUÇÃO  --------------------------
@@ -61,7 +61,7 @@ let repetidos2 = listaNumeros.filter((valorFilter, indiceFilter, arrayFilter) =>
 
 console.log('')
 console.log('SEGUNDA RESOLUÇÃO ', repetidos2)
-console.log('SEGUNDA RESOLUÇÃO ', repetidos2.filter((valor, indice, array) => valor !== array[indice + 1]))
+
 
 
 // ---------------      TERCEIRA RESOLUÇÃO  --------------------------
@@ -72,7 +72,7 @@ console.log('TERCEIRA RESOLUÇÃO - ordena -> numeros iguais seguidos', ordenado
 
 let repetidos3 = ordenados.filter((valor, indice, array) => valor === array[indice + 1])
 console.log('TERCEIRA RESOLUÇÃO ', repetidos3)
-console.log('TERCEIRA RESOLUÇÃO ', repetidos3.filter((valor, indice, array) => valor !== array[indice + 1]))
+
 
 
 // ---------------      QUARTA RESOLUÇÃO  --------------------------
@@ -80,7 +80,7 @@ let repetidos4 = listaNumeros.filter(( valor, indice, array) => array.indexOf(va
 
 console.log('')
 console.log('QUARTA RESOLUÇÃO ', repetidos4)
-console.log('QUARTA RESOLUÇÃO ', repetidos4.filter(( valor, indice, array) => array.indexOf(valor) === indice))
+
 
 
 
