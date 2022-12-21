@@ -75,6 +75,15 @@ console.log('TERCEIRA RESOLUÇÃO ', repetidos3)
 console.log('TERCEIRA RESOLUÇÃO ', repetidos3.filter((valor, indice, array) => valor !== array[indice + 1]))
 
 
+// ---------------      QUARTA RESOLUÇÃO  --------------------------
+let repetidos4 = listaNumeros.filter(( valor, indice, array) => array.indexOf(valor) !== indice)
+
+console.log('')
+console.log('QUARTA RESOLUÇÃO ', repetidos4)
+console.log('QUARTA RESOLUÇÃO ', repetidos4.filter(( valor, indice, array) => array.indexOf(valor) === indice))
+
+
+
 
 // 5 - Escreva um algoritmo para informar se existe algum número maior que 50 na lista
 
