@@ -49,7 +49,7 @@ let repetidos2 = listaNumeros.filter((valorFilter, indiceFilter, arrayFilter) =>
     // SOME - true ou false
     const repetiu = arrayFilter.some((valorSome, indiceSome) => {
         
-        if(indiceSome === indiceFilter || indiceSome < indiceFilter) {
+        if(indiceSome <= indiceFilter) {
             return false
         }
 
