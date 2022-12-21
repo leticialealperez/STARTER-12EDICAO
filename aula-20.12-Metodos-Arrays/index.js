@@ -17,19 +17,19 @@ let listaNumeros = [ -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 
 // 4 - Escreva um algoritmo para buscar apenas os números repetidos na lista
 
 // ---------------      PRIMEIRA RESOLUÇÃO  --------------------------
-let repetidos1 = listaNumeros.filter((valor1, indice1, array1) => {
+let repetidos1 = listaNumeros.filter((valor1, indice1, array) => {
     
     // console.log(`FILTER - [${indice1}] = ${valor1}`)
    
 
     // SOME
-    const repetiu = listaNumeros.some((valor2, indice2, array2) => {
+    const repetiu = array.some((valor2, indice2) => {
         
-         let indice = (indice2 + indice1) + 1
+        let indiceAuxiliar = (indice1 + indice2) + 1
 
-        if(array2.length > indice) {
-            // console.log(`SOME - [${indice}] = ${array2[indice]}`) 
-            return array2[indice] === valor1
+        if(indiceAuxiliar < array.length) {
+            // console.log(`SOME - [${indiceAuxiliar}] = ${array[indiceAuxiliar]}`) 
+            return array[indiceAuxiliar] === valor1
         }
 
         return false
