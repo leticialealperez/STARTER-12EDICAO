@@ -15,3 +15,7 @@ function mostrarSite() {
     alert("Bem vindo ao site!")
 }
 
+
+function teste() {
+    console.log("teste")
+}
