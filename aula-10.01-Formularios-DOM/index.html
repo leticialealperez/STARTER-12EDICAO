@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <!-- TEXTO: nome, endereços, cpf, telefone -->
+            <label for="nome">Nome completo: </label>
+            <input type="text" placeholder="Ex: João Silva" id="nome" required value="João"> <br> <br>
+            
+            <!-- NUMERICO: idade, altura, peso -->
+            <label for="idade">Idade: </label>
+            <input type="number" placeholder="Ex: 27" id="idade" required> <br> <br>
+            
+            <!-- EMAIL: login de usuário -->
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" placeholder="Ex: teste@teste.com.br" required> <br> <br>
+            
+            <!-- PASSWORD: -->
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" placeholder="Digite uma senha forte" required> <br> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outras Informações</legend>
+
+            <!-- DATE: armazenar datas de nascimento, data de criação de um registro  (aaaa-mm-dd) -->
+            <input type="date"> <br> <br>
+            
+            <!-- COLOR: -->
+            <input type="color"> <br> <br>
+            
+            <!-- FILE: utilizado para capturar uploads de arquivos de um usuário -->
+            <input type="file"> <br> <br>
+            
+            <!-- RADIO BUTTONS: dispor que o usuario selecione 1 entre algumas opções -->
+            <label for="sabor">Sabor: </label>
+            
+            <input type="radio" name="sabor" id="sabor-1">
+            <label for="sabor-1">Calabresa</label>
+            
+            <input type="radio" name="sabor" id="sabor-2">
+            <label for="sabor-2">Portuguesa</label>
+            
+            <input type="radio" name="sabor" id="sabor-3">
+            <label for="sabor-3">Mexicana</label>
+            <br> <br>
+            
+            
+            <!-- CHECKBOX: precisar dispor um conjunto de opções disponiveis para seleção -->
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <br> <br>
+            
+            <!-- SELECT OPTION: dispor que o usuario selecione 1 entre várias opções -->
+            <select>
+                <option value="" disabled selected>-Selecione-</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceara</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+        <!-- OS BOTÕES DE CONTROLE DO FORMULÁRIO PRECISAM ESTAR ENTRE A ABERTURA E FECHAMENTO DA TAG FORM-->
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar Dados">
+    </form>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
